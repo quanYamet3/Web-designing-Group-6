@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INK - Van Phong Pham</title>
-  <link rel="stylesheet" href="css/style.css">
-
-  </head>
+  <link rel="stylesheet" href="CSS_trang_chủ.css">
+</head>
 <body>
   <!-- Thanh điều hướng -->
   <nav>
@@ -17,7 +16,7 @@
       <a href="#">Trang Chủ</a>
       <a href="#">Sản Phẩm</a>
       <a href="#">Giới Thiệu</a>
-      <a href="#"">Blog</a>
+      <a href="#">Blog</a>
       <a href="#" onclick="showPage('contact');setActive(this)">Liên Hệ</a>
     </div>
     <div class="nav-right">
