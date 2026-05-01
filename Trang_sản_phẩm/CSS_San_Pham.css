@@ -48,7 +48,8 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
+            padding-left: 0px;
+            padding-right: 50px;
         }
 
         .header-top {
@@ -247,11 +248,12 @@
 
         /* === FOOTER === */
         .site-footer {
-            background-color: white;
+            
             padding: 40px 0;
             margin-top: 40px;
             border-top: 2px solid var(--primary-purple);
             font-size: 14px;
+            background:var(--ink-dark); color:var(--ink-light);
         }
 
         .footer-grid {
