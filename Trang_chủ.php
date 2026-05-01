@@ -6,7 +6,7 @@
   <title>INK - Van Phong Pham</title>
   <link rel="stylesheet" href="CSS_trang_chủ.css">
 </head>
-<body>
+<header>
   <!-- Thanh điều hướng -->
   <nav>
     <a href="#" class="nav-logo">
@@ -22,11 +22,11 @@
     <div class="nav-right">
       <div class="search-box">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input type="text" placeholder="Tim kiem..." id="searchInput" oninput="filterProducts()">
+        <input type="text" placeholder="Tìm kiếm..." id="searchInput" oninput="filterProducts()">
       </div>
       <button class="btn-account" onclick="openModal('loginModal')">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        Tai Khoan
+        Tài khoản
       </button>
       <!-- Nút giỏ hàng - Small pill -->
       <button class="btn-cart" onclick="toggleCart()">
@@ -62,8 +62,10 @@
       <button class="btn-checkout">Thanh Toán Ngay</button>
     </div>
   </div>
-
-  <!-- ═══════════ HOME PAGE ═══════════ -->
+</header>
+<body>
+  
+<!-- ═══════════ HOME PAGE ═══════════ -->
   <div id="home" class="page active">
     <!-- HERO -->
     <section class="hero">
