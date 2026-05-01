@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giao diện Bài viết Ink</title>
+    <style>
+      :root {
+        --primary-purple: #6a1b9a; /* Màu tím thương hiệu */
+        --accent-orange: #ff6d00; /* Màu cam từ logo */
+        --text-gray: #333;
+        --light-gray: #777;
+        --bg-color: #f9f9f9;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-gray);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        background: #fff;
+        margin: 0 auto;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        border-left: 1px solid #eee;
+      }
+
+      /* Phần Category/Breadcrumb */
+      .category {
+        color: var(--primary-purple);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+
+      /* Tiêu đề chính */
+      h1 {
+        color: var(--primary-purple);
+        font-size: 2.2rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+        line-height: 1.2;
+      }
+
+      /* Đường gạch ngang nhỏ dưới tiêu đề */
+      .divider {
+        width: 40px;
+        height: 3px;
+        background-color: #ddd;
+        margin-bottom: 20px;
+      }
+
+      /* Ngày đăng và Tác giả */
+      .meta {
+        font-size: 0.8rem;
+        color: var(--light-gray);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+      .meta span {
+        color: var(--primary-purple);
+      }
+
+      /* Tiêu đề phụ trong bài viết */
+      h2 {
+        color: var(--primary-purple);
+        font-size: 1.8rem;
+        margin-top: 30px;
+      }
+
+      h3 {
+        color: var(--primary-purple);
+        font-size: 1.4rem;
+        margin-top: 25px;
+      }
+
+      /* Nội dung văn bản */
+      p {
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      /* Điểm nhấn số thứ tự (như ảnh 2) */
+      .section-title {
+        color: var(--primary-purple);
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-top: 35px;
+        margin-bottom: 15px;
+      }
+
+      /* Nút hotline nổi (Floating button) */
+      .hotline-btn {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        background-color: var(--primary-purple);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 4px 15px rgba(106, 27, 154, 0.3);
+      }
+
+      .hotline-btn::before {
+        content: "📞";
+        margin-right: 10px;
+      }
+
+      /* Hình ảnh minh họa */
+      .featured-image {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="category">TIN TỨC</div>
+      <h1>Những sai lầm khi ghi chép mà bạn nên tránh</h1>
+      <div class="divider"></div>
+      <div class="meta">Đã đăng trên 10/12/2025 bởi <span>ADMIN</span></div>
+      <img src="https://i.ibb.co/c5Lz1xN/image4-22.png" />
+      <p>
+        Ghi chép là một kỹ năng quen thuộc trong học tập và công việc, nhưng
+        không phải ai cũng biết cách ghi chép hiệu quả. Nhiều người dành rất
+        nhiều thời gian để viết, nhưng khi cần xem lại thì lại không thể sử dụng
+        được những gì mình đã ghi. Nguyên nhân thường không nằm ở việc bạn ghi
+        ít hay nhiều, mà nằm ở cách bạn ghi chép. Nếu không nhận ra và điều
+        chỉnh những sai lầm phổ biến, việc ghi chép có thể trở nên tốn thời gian
+        mà không mang lại hiệu quả thực sự.
+      </p>
+
+      <p>
+        Một trong những sai lầm thường gặp nhất là ghi chép quá dài dòng. Nhiều
+        người có xu hướng viết lại gần như toàn bộ nội dung mà không chọn lọc,
+        dẫn đến việc trang giấy trở nên dày đặc và khó đọc. Khi cần xem lại, bạn
+        sẽ mất nhiều thời gian để tìm kiếm thông tin quan trọng, thậm chí có thể
+        bỏ qua những ý chính vì chúng không được làm nổi bật. Ghi chép hiệu quả
+        không phải là ghi thật nhiều, mà là ghi đúng và đủ.
+      </p>
+
+      <p>
+        Bên cạnh đó, việc không có cấu trúc rõ ràng cũng là một vấn đề lớn. Khi
+        nội dung được viết một cách liền mạch mà không có tiêu đề, không phân
+        chia ý, bạn sẽ rất khó theo dõi khi đọc lại. Một trang ghi chép tốt nên
+        có sự sắp xếp hợp lý, với các phần được chia rõ ràng để bạn dễ dàng nhận
+        biết và tra cứu khi cần.
+      </p>
+
+      <p>
+        Ngoài ra, nhiều người không phân loại thông tin trong quá trình ghi
+        chép. Tất cả nội dung được viết giống nhau mà không có sự khác biệt giữa
+        ý chính và ý phụ, khiến việc tiếp nhận trở nên khó khăn. Việc không
+        highlight hoặc không sử dụng ký hiệu để nhấn mạnh những phần quan trọng
+        cũng làm giảm đáng kể hiệu quả của việc ghi nhớ.
+      </p>
+
+      <p>
+        Một sai lầm khác là ghi chép nhưng không bao giờ xem lại. Ghi chép chỉ
+        thực sự có giá trị khi bạn sử dụng lại nó. Nếu bạn chỉ viết rồi bỏ đó,
+        bạn sẽ nhanh chóng quên đi những gì đã học hoặc đã ghi. Việc dành thời
+        gian để đọc lại, bổ sung hoặc chỉnh sửa sẽ giúp bạn hiểu sâu hơn và ghi
+        nhớ lâu hơn.
+      </p>
+
+      <p>
+        Để cải thiện những vấn đề này, bạn không cần thay đổi quá nhiều mà chỉ
+        cần bắt đầu từ những điều đơn giản. Hãy giữ nội dung ngắn gọn, tập trung
+        vào ý chính và tránh viết lan man. Sử dụng tiêu đề rõ ràng để phân chia
+        nội dung, đồng thời áp dụng các ký hiệu, màu sắc hoặc cách trình bày
+        khác nhau để làm nổi bật thông tin quan trọng. Những thay đổi nhỏ này sẽ
+        giúp bạn dễ dàng đọc lại và sử dụng thông tin hiệu quả hơn.
+      </p>
+
+      <p>
+        Ghi chép không chỉ là việc viết xuống thông tin, mà còn là cách bạn tổ
+        chức suy nghĩ của mình. Khi bạn ghi chép một cách có hệ thống, bạn không
+        chỉ tiết kiệm thời gian mà còn nâng cao khả năng hiểu và ghi nhớ. Tránh
+        được những sai lầm cơ bản và duy trì một phương pháp ghi chép phù hợp sẽ
+        giúp bạn học tập và làm việc hiệu quả hơn mỗi ngày.
+      </p>
+    </div>
+
+    <a href="tel:0394334199" class="hotline-btn">0394334199</a>
+  </body>
+</html>

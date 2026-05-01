@@ -1,0 +1,221 @@
+/* 1. KHAI BÁO BIẾN MÀU SẮC THƯƠNG HIỆU INK */
+:root {
+  --ink-purple: #5c3290; /* Tím chủ đạo */
+  --ink-dark: #3e1e66; /* Tím đậm cho Nav */
+  --ink-light: #f3f0f8; /* Tím nhạt cho nền */
+  --ink-orange: #f37021; /* Cam hành động */
+  --text-main: #333333;
+  --text-gray: #777777;
+  --border-color: #eeeeee;
+}
+
+/* 2. RESET CƠ BẢN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: var(--text-main);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* 3. HEADER & NAVIGATION (GIỮ CHUẨN FORM) */
+.main-header {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand-name {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--ink-purple);
+}
+
+.main-nav {
+  background: var(--ink-dark);
+  color: #fff;
+}
+.nav-flex {
+  display: flex;
+  align-items: center;
+}
+.category-dropdown {
+  background: var(--ink-purple);
+  padding: 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu-links {
+  display: flex;
+  list-style: none;
+}
+.menu-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* 4. GRID BÀI VIẾT - KHẮC PHỤC LỖI TRÀN KHUNG */
+.news-section {
+  padding: 50px 0;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Chia 3 cột đều nhau */
+  gap: 30px; /* Khoảng cách giữa các bài */
+}
+
+/* 5. CARD BÀI VIẾT - KHẮC PHỤC LỖI ĐÈ CHỮ */
+.news-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Xếp dọc: Ảnh -> Nội dung */
+  transition: 0.3s ease;
+}
+
+.news-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Khối chứa ảnh */
+.thumb {
+  position: relative; /* Điểm tựa cho Date Tag */
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ảnh tự co giãn không bị méo */
+}
+
+/* Thẻ Ngày tháng - Cố định ở góc trái trên cùng của ảnh */
+.date-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--ink-purple);
+  color: #fff;
+  padding: 8px 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.2;
+  z-index: 5;
+}
+
+/* 6. NỘI DUNG CHỮ TRONG BÀI VIẾT */
+.news-content {
+  padding: 20px;
+  flex-grow: 1; /* Đảm bảo các card có độ cao bằng nhau */
+  display: flex;
+  flex-direction: column;
+}
+
+.news-content h3 {
+  font-size: 17px;
+  color: var(--ink-purple); /* Đổi đỏ Deli thành tím INK */
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-weight: bold;
+  /* Giới hạn tiêu đề tối đa 2 dòng */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.author {
+  font-size: 13px;
+  color: var(--text-gray);
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.excerpt {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  /* Giới hạn mô tả tối đa 3 dòng */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more {
+  margin-top: auto; /* Đẩy chữ Read More xuống dưới cùng */
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.read-more:hover {
+  color: var(--ink-orange);
+}
+
+/* 7. PHÂN TRANG (PAGINATION) */
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button.active {
+  background: var(--ink-purple);
+  color: #fff;
+  border-color: var(--ink-purple);
+}
+
+/* 8. RESPONSIVE (CHO ĐIỆN THOẠI) */
+@media (max-width: 992px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}

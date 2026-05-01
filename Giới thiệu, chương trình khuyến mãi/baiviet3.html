@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giao diện Bài viết Ink</title>
+    <style>
+      :root {
+        --primary-purple: #6a1b9a; /* Màu tím thương hiệu */
+        --accent-orange: #ff6d00; /* Màu cam từ logo */
+        --text-gray: #333;
+        --light-gray: #777;
+        --bg-color: #f9f9f9;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-gray);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        background: #fff;
+        margin: 0 auto;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        border-left: 1px solid #eee;
+      }
+
+      /* Phần Category/Breadcrumb */
+      .category {
+        color: var(--primary-purple);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+
+      /* Tiêu đề chính */
+      h1 {
+        color: var(--primary-purple);
+        font-size: 2.2rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+        line-height: 1.2;
+      }
+
+      /* Đường gạch ngang nhỏ dưới tiêu đề */
+      .divider {
+        width: 40px;
+        height: 3px;
+        background-color: #ddd;
+        margin-bottom: 20px;
+      }
+
+      /* Ngày đăng và Tác giả */
+      .meta {
+        font-size: 0.8rem;
+        color: var(--light-gray);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+      .meta span {
+        color: var(--primary-purple);
+      }
+
+      /* Tiêu đề phụ trong bài viết */
+      h2 {
+        color: var(--primary-purple);
+        font-size: 1.8rem;
+        margin-top: 30px;
+      }
+
+      h3 {
+        color: var(--primary-purple);
+        font-size: 1.4rem;
+        margin-top: 25px;
+      }
+
+      /* Nội dung văn bản */
+      p {
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      /* Điểm nhấn số thứ tự (như ảnh 2) */
+      .section-title {
+        color: var(--primary-purple);
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-top: 35px;
+        margin-bottom: 15px;
+      }
+
+      /* Nút hotline nổi (Floating button) */
+      .hotline-btn {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        background-color: var(--primary-purple);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 4px 15px rgba(106, 27, 154, 0.3);
+      }
+
+      .hotline-btn::before {
+        content: "📞";
+        margin-right: 10px;
+      }
+
+      /* Hình ảnh minh họa */
+      .featured-image {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="category">TIN TỨC</div>
+      <h1>Nguồn gốc và ý nghĩa của sổ tay văn phòng</h1>
+      <div class="divider"></div>
+      <div class="meta">Đã đăng trên 10/12/2025 bởi <span>ADMIN</span></div>
+      <img
+        src="https://i.ibb.co/Nn15V3QZ/cach-bao-quan-but-tap-so-tay-giay-in-de-dung-lau-va-giu-chat-luong-04-1.jpg"
+      />
+      <p>
+        Sổ tay văn phòng là vật dụng quen thuộc trong môi trường công sở. Dù
+        công nghệ ghi chú phát triển nhanh, sổ tay vẫn giữ vai trò quan trọng
+        trong công việc. Nhiều người xem sổ tay là công cụ hỗ trợ tư duy và quản
+        lý thông tin hiệu quả. Để hiểu rõ giá trị của sổ tay, chúng ta cần nhìn
+        lại nguồn gốc và ý nghĩa của nó.
+      </p>
+
+      <div class="section-title">1. Nguồn gốc của sổ tay qua từng thời kỳ</div>
+      <p>
+        Khái niệm ghi chép bằng tay đã xuất hiện từ thời cổ đại. Con người dùng
+        bảng đất sét, thẻ tre hoặc giấy da để lưu lại thông tin. Khi giấy được
+        phát minh tại Trung Quốc, việc ghi chép trở nên phổ biến hơn. Những cuốn
+        sổ đầu tiên có dạng đơn giản, thường được buộc dây hoặc khâu tay.
+      </p>
+
+      <p>
+        Hãy dành một cuốn sổ tay riêng để viết nhật ký mỗi tối hoặc khi bạn
+        muốn. Theo thời gian, bạn sẽ thấy đây là cách tuyệt vời để nhìn lại bản
+        thân và theo dõi sự trưởng thành của mình.
+      </p>
+
+      <div class="section-title">2. Luyện Chữ Đẹp</div>
+      <p>
+        Ông bà ta có câu: “Nét chữ nết người”. Một nét chữ đẹp luôn tạo thiện
+        cảm. Sổ tay là nơi lý tưởng để bạn luyện chữ mỗi ngày.
+      </p>
+
+      <p>
+        Kiên trì viết trong cùng một cuốn sổ, sau một thời gian, bạn sẽ nhận ra
+        sự tiến bộ rõ rệt – cảm giác này rất đáng tự hào.
+      </p>
+
+      <div class="section-title">3. Lập Danh Sách Công Việc</div>
+      <p>
+        Mỗi ngày chúng ta có nhiều việc phải làm, và việc lên kế hoạch giúp mọi
+        thứ trôi chảy hơn.
+      </p>
+
+      <p>
+        Hãy dùng sổ tay để ghi danh sách công việc vào mỗi sáng – từ việc quan
+        trọng đến việc nhỏ dễ quên. Khi hoàn thành từng mục, bạn sẽ thấy hiệu
+        quả và năng suất tăng lên rõ rệt.
+      </p>
+
+      <div class="section-title">4. Ghi Lại Ý Tưởng</div>
+      <p>
+        Trong cuộc sống, đôi khi bạn chợt nghĩ ra ý tưởng hay. Nếu không ghi lại
+        ngay, rất dễ quên mất.
+      </p>
+
+      <p>
+        Sổ tay cho phép bạn lưu lại bất kỳ ý tưởng nào, bất cứ lúc nào, mà không
+        cần theo khuôn mẫu. Sau đó, bạn có thể xem lại, phát triển hoặc biến
+        chúng thành hiện thực.
+      </p>
+
+      <div class="section-title">5. Viết Để Giải Tỏa Cảm Xúc</div>
+      <p>
+        Cuộc sống không phải lúc nào cũng thuận lợi. Khi buồn, bực bội hoặc căng
+        thẳng, viết ra cảm xúc là cách đơn giản để giải tỏa.
+      </p>
+
+      <p>
+        Hãy ghi lại những điều khiến bạn khó chịu. Khi đọc lại sau một thời
+        gian, bạn sẽ thấy tâm trạng nhẹ nhõm hơn và nhận ra mình đã trưởng thành
+        hơn trước.
+      </p>
+
+      <div class="section-title">Kết luận</div>
+      <p>
+        Sổ tay có thể dùng cho nhiều mục đích: ghi chép công việc, lưu giữ ý
+        tưởng, hay viết nhật ký cá nhân. Nó vừa giúp bạn quản lý cuộc sống, vừa
+        là nơi lưu giữ kỷ niệm.
+      </p>
+
+      <p>
+        Deli – thương hiệu văn phòng phẩm hàng đầu – mang đến nhiều mẫu sổ tay
+        đẹp, chất lượng cao, phù hợp cho mọi nhu cầu học tập và làm việc.
+      </p>
+    </div>
+
+    <a href="tel:0394334199" class="hotline-btn">0394334199</a>
+  </body>
+</html>
