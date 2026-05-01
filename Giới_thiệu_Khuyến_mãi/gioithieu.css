@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #fff;
   color: var(--text-dark);
@@ -21,30 +21,6 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-/* Header */
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-.logo {
-  font-size: 32px;
-  font-weight: 900;
-  color: var(--purple-ink);
-}
-.nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #666;
-  font-weight: bold;
-  font-size: 13px;
-}
-.nav a.active {
-  color: orange;
-  border-bottom: 2px solid orange;
 }
 
 /* Hero */
@@ -187,17 +163,6 @@ section {
   /* Thuộc tính tùy chọn để ảnh chuyên nghiệp hơn */
   object-fit: cover; /* Đảm bảo ảnh lấp đầy khung mà không bị kéo giãn */
   aspect-ratio: 1 / 1; /* Ép khung ảnh thành hình vuông hoàn hảo (1:1) */
-}
-
-/* Footer */
-.footer {
-  background: var(--purple-ink);
-  color: white;
-  padding: 40px 0;
-}
-.footer-grid {
-  display: flex;
-  justify-content: space-between;
 }
 
 /*PHẦN HÀNH TRÌNH INK/
